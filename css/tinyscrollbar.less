@@ -1,0 +1,25 @@
+/* Tiny Scrollbar */
+/*.scrollbar1 { width: 172px; margin: 0px 0 10px; height: 100%}
+.scrollbar1 .viewport { width: 164px; height: 100%; overflow: hidden; position: relative; }
+.scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+.scrollbar1 .scrollbar{ background: transparent; position: relative; background-position: 0 0; float: right; width: 6px; }
+*//*#scrollbar1 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:4px; position: relative; padding: 0 1px; }*//*
+.scrollbar1 .track { background-color:rgba(150, 150, 150, 0.6) ; width: 100%; height:10px; position: relative; border-radius: 3px;   }
+.scrollbar1 .thumb { background: darkred;
+  height: 20px; width: 6px;
+  border-radius: 3px;
+  cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0px; }*/
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+.scrollbar1, .scrollbar2 {
+  width: 180px; margin: 0px 0 10px; height: 100%;
+  .viewport { width: 172px; height: 100%; overflow: hidden; position: relative; }
+  .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+  .scrollbar{ background: transparent; position: relative; background-position: 0 0; float: right; width: 6px; }
+  .track { background-color:rgba(150, 150, 150, 0.6) ; width: 100%; height:10px; position: relative; border-radius: 3px;   }
+  .thumb { background: darkred;
+    height: 20px; width: 6px;
+    border-radius: 3px;
+    cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0px;
+  }
+}

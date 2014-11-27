@@ -1,0 +1,86 @@
+.sprite-points, .sprite-region{
+  width: 186px;
+  min-height: 300px;
+  background: rgba(255,255,255, 0.7);
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 2;
+  box-shadow: 0 0px 2px black,  0 0px 5px white;
+
+  .contener-scroll{
+    padding: 5px;
+  }
+  .row{
+    border-radius: 3px;
+    border: 3px solid #c1c1c1;
+    padding: 2px;
+    margin: 5px 1px;
+    width: 157px;
+    &.hover{
+      background: #fff;
+      box-shadow: 0 0 2px black, 0 0 5px black;
+      border: 3px solid red;
+      .ico-title{
+        display: block;
+      }
+    }
+    &:hover{
+      background: #fff;
+      border: 3px solid red;
+      box-shadow: 0 0 2px black, 0 0 5px black;
+      .ico-title{
+        display: block;
+      }
+    }
+    .title{
+      font-weight: bold;
+      padding: 5px 0;
+      border-bottom: 1px solid #cdcdcd;
+      position: relative;
+
+    }
+    .ico-title{
+      float: right;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      width: 22px;
+      height: 16px;
+      display: none;
+      background: url("../img/510title.png") no-repeat center;
+      background-size: 100% 100%;
+    }
+    .content{
+      padding: 5px 0 0 0;
+    }
+
+  }
+  .footer{
+    bottom: 0;
+
+
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    &>div{
+      background: darkred;
+      border: 1px solid darkred;
+      margin: 0px;
+      padding: 5px;
+      border-radius: 2px;
+    }
+    &:hover{
+      text-shadow: 0 0 10px #fff ;
+    }
+    &:active{
+     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
+     background: #690000;
+      text-shadow: 0 0 2px #fff, 0 0 10px #fff ;
+    }
+  }
+
+
+}
