@@ -7,7 +7,7 @@
 );*/
 $connect = array(
     'login' => 'root',
-    'pass' => 'astalavista',
+    'pass' => 'gliderman',
     'host' => 'localhost',
     'table' => 'monitoring',
 );
