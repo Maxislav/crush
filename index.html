@@ -10,10 +10,20 @@
     <meta name="MobileOptimized"  />
     <meta name="PalmComputingPlatform" content="true" />
     <link rel="stylesheet" type="text/css" href="build/css.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.css">
+
+    <!--<script src="lib/jquery/jquery-ui-1.10.4.custom.js"></script>-->
     <script data-main="js/init.js" src="lib/requirejs/require.js"></script>
 </head>
 <body>
-
+<div class="border-ridge" id="div_geosearch" style="">
+    <table cellpadding="0" cellspacing="0" style="width: 100%; padding: 2px" class='title'>
+        <tr>
+            <td align='center'><p style="margin-right: -20px">GEO Search!</p> </td><td class="cancel" width='20' onclick="geocoding.vhide()"></td>
+        </tr>
+    </table>
+    <input id="address" style="width:296px;" type="text"/>
+</div>
 <table class="main">
     <tr>
         <td>
@@ -22,6 +32,9 @@
         </td>
     </tr>
 </table>
+<div class="button search" id="btnSearch">
+    Поиск
+</div>
 <!--<div style="position: absolute; bottom: 5px; right: 100px; padding: 5px; border: 1px solid darkred; background: #ffffff">
     <a href="https://github.com/Maxislav/5.10">Скачать</a>
 

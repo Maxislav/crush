@@ -11,6 +11,7 @@ requirejs.config({
         jquery: 'lib/jquery/jquery-1.11.1.min',
         leaflet: 'lib/leaflet/leaflet',
         basemarker: 'module/basemarker/basemarker',
+      //  ui: 'lib/jquery/jquery-ui-1.10.4.custom',
         text: 'lib/requirejs/text',
         build: 'build/scripts.min',
         addpoint: 'module/addpoint/addpoint',
@@ -25,6 +26,8 @@ requirejs.config({
                // 'leaflet'
             ]
         }
+
+
     }
 });
 var app;

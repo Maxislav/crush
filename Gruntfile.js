@@ -9,7 +9,8 @@ module.exports = function (grunt) {
                     'lib/jquery/jquery-1.11.1.min.js',
                     'lib/jquery/jquery.tinyscrollbar.js',
                     'lib/leaflet/leaflet.js',
-                    'lib/lodash/lodash.compat.min.js'
+                    'lib/lodash/lodash.compat.min.js',
+                    'lib/jquery/jquery-ui-1.10.4.custom.js'
                 ],
                 dest: 'build/scripts.js'
             }

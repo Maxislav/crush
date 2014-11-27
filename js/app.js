@@ -9,6 +9,7 @@ define(function () {
             events();
            // setRegion();
             setMarker();
+            loadGeocoding()
         };
 
 
@@ -22,6 +23,11 @@ define(function () {
             var baseLayers = {'OSM': osm, 'Google': ggl, 'Google sat': gglsats  };
             var layerControl = L.control.layers(baseLayers);
             layerControl.addTo(map);
+            window['dmarker'] = L.icon({
+                iconUrl: 'img/default_marker.png',
+                iconSize: [24, 40],
+                iconAnchor: [12, 40]
+            })
         };
 
         function setRegion() {
@@ -39,6 +45,14 @@ define(function () {
                 'text!module/basemarker/sprite.html'
             ], function (js, html) {
                 new js(html);
+            })
+        }
+
+        function loadGeocoding(){
+            require([
+                'module/geocoding/geocoding'
+            ], function(){
+                geocoding.init()
             })
         }
 
