@@ -1,7 +1,7 @@
 <?php
 
 
-$c = file_get_contents("http://maps.google.com/maps/api/js?sensor=false");
+$c = file_get_contents("http://maps.google.com/maps/api/js?sensor=false&language=ru");
 
 
 $c= str_replace("document.write", '$("head").append', $c);
