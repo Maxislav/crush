@@ -7,13 +7,13 @@ define(function () {
         this.init = function () {
             initmap();
             events();
-            setRegion();
+           // setRegion();
             setMarker();
         };
 
 
         function initmap() {
-            map = L.map('maped').setView([48.9, 30.49], 6);
+            map = L.map('maped').setView([48.46, 32.8], 6);
 
             osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
             ggl = new L.TileLayer('http://mt0.googleapis.com/vt/lyrs=m@207000000&hl=ru&src=api&x={x}&y={y}&z={z}&s=Galile', {maxZoom: 18, minZoom: 3});

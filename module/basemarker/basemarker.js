@@ -20,9 +20,9 @@ define(function () {
         //item.append(html)
 
         var myIcon = L.icon({
-            iconUrl: 'img/5.10.png',
-            iconSize: [30, 45],
-            iconAnchor: [15, 45],
+            iconUrl: 'img/crush.png',
+            iconSize: [45, 45],
+            iconAnchor: [21, 45],
             popupAnchor: [0, -45]
         });
 

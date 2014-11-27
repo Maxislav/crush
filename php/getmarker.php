@@ -5,7 +5,7 @@ require_once('loginpass.php');
 
 
 
-$res = mysql_query("SELECT * FROM fiveten ORDER BY name");
+$res = mysql_query("SELECT * FROM crush ORDER BY name");
 $points = array();
 if (mysql_num_rows($res) > 0) {
 
